@@ -1,7 +1,26 @@
 .project-list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.project-list__item {
+    
+    width: 100%;
+    @include mobile {
+        width: 450px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+        width: calc((100% - 60px) / 3);
+    }
 }
 
 .project-list__top-wrap {

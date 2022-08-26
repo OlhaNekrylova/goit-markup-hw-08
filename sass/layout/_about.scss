@@ -8,10 +8,6 @@
 
 .box-list__item {
     width: 100%;
-    @include mobile {
-        
-    }
-
     @include tablet {
         width: calc((100% - 30px) / 2);
     }
@@ -29,20 +25,20 @@
     margin-bottom: 30px;
     background-color: var(--second-color);
     border-radius: 4px;
-    @include mobile {
-        width: 450px;
-        height: 120px;
-    }
+    // @include mobile {
+    //     width: 450px;
+    //     height: 120px;
+    // }
 
-    @include tablet {
-        width: 354px;
-        height: 120px;
-    }
+    // @include tablet {
+    //     width: 354px;
+    //     height: 120px;
+    // }
 
-    @include desktop {
-        width: 270px;
-        height: 120px;
-    }
+    // @include desktop {
+    //     width: 270px;
+    //     height: 120px;
+    // }
 }
 
 // .box-list__wrap {

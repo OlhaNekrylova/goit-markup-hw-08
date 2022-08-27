@@ -1,13 +1,9 @@
-.footer {
+.footer__container {
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-right: 0;
+    padding-left: 0;
     background-color: var(--background-color);
-    @include desktop {
-        display: flex;
-    }
-}
-
-.footer__container {
     @media screen and (min-width: 481px) and (max-width: 1199px) {
         display: flex;
         flex-wrap: wrap;

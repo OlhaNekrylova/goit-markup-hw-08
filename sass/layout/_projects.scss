@@ -6,10 +6,9 @@
 }
 
 .project-list__item {
-    
     width: 100%;
-    @include mobile {
-        width: 450px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        // width: 450px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -20,6 +19,10 @@
 
     @include desktop {
         width: calc((100% - 60px) / 3);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: auto; 
     }
 }
 
@@ -68,11 +71,6 @@
         justify-content: flex-start;
     }
 }
-
-// .order {
-//     display: flex;
-//     justify-content: flex-start;
-// }
 
 .subject__title {
     margin-bottom: 4px;

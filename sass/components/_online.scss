@@ -1,10 +1,21 @@
 .online {
-    justify-content: center;
-    @media screen and (min-width: 320px) and (max-width: 1199) {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
     display: flex;
-    // justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+    }
+
+    @include desktop {
+        justify-content: center;
+    }
+}
+
+.footer__online {
+    margin-top: 60px;
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
@@ -16,19 +27,23 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--first-color);
-    @media screen and (max-width: 767px) {
-        display: flex;
-        justify-content: center;
+    @media screen and (min-width: 320px) and (max-width: 480px) {
         margin-right: auto;
         margin-left: auto;
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 1199px) {
+        display: flex;
+        justify-content: center;
     }
 }
 
 .user-form {
     display: flex;
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
         flex-wrap: wrap;
         gap: 20px;
+        flex-direction: column;
     }
    
    @include desktop {
@@ -47,7 +62,12 @@
     border-radius: 4px;
     background-color: transparent;
     outline: transparent;
-    @media screen and (min-width: 480px) and (max-width: 1199) {
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
         width: 450px;
     }
     
@@ -82,7 +102,7 @@
     &:hover, &:focus {
          background-color: var(--second-accent-color);
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
         margin-right: auto;
         margin-left: auto;
     }

@@ -537,6 +537,12 @@ body {
   }
 }
 
+@media screen and (min-width: 481px) and (max-width: 1199px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: flex;
@@ -545,23 +551,23 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .contacts {
+  .footer__contacts {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) {
-  .contacts {
-    flex-basis: 50%;
+@media screen and (min-width: 481px) and (max-width: 1199px) {
+  .footer__contacts {
+    width: 50%;
   }
 }
 @media screen and (min-width: 1200px) {
-  .contacts {
+  .footer__contacts {
     flex-grow: 1;
     margin-right: 70px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer__logo {
     display: flex;
     justify-content: center;
@@ -579,7 +585,7 @@ body {
 .address__item:last-child {
   margin-bottom: 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .address__item {
     display: flex;
     justify-content: center;
@@ -627,9 +633,9 @@ body {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 1199px) {
   .footer__social {
-    flex-basis: 50%;
+    width: 50%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -647,21 +653,34 @@ body {
   text-transform: uppercase;
   color: var(--first-color);
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .social__pre-title {
     display: flex;
     justify-content: center;
   }
 }
 
-.online {
-  justify-content: center;
-}
-@media screen and (min-width: 320px) and (max-width: 1199) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .online {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .online {
+    justify-content: center;
+  }
+}
+
+.footer__online {
+  margin-top: 60px;
+}
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .footer__online {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -674,22 +693,27 @@ body {
   text-transform: uppercase;
   color: var(--first-color);
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .online__text {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1199px) {
   .online__text {
     display: flex;
     justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
 .user-form {
   display: flex;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .user-form {
     flex-wrap: wrap;
     gap: 20px;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -710,7 +734,13 @@ body {
   background-color: transparent;
   outline: transparent;
 }
-@media screen and (min-width: 480px) and (max-width: 1199) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .user-form__input {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .user-form__input {
     width: 450px;
   }
@@ -748,7 +778,7 @@ body {
 .user-form__button-submit:hover, .user-form__button-submit:focus {
   background-color: var(--second-accent-color);
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .user-form__button-submit {
     margin-right: auto;
     margin-left: auto;
@@ -944,10 +974,14 @@ body {
 
 .menu__list {
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .menu__list {
+    width: 326px;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu__list {
@@ -991,9 +1025,8 @@ body {
 .project-list__item {
   width: 100%;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .project-list__item {
-    width: 450px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1006,6 +1039,11 @@ body {
 @media screen and (min-width: 1200px) {
   .project-list__item {
     width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project-list__item {
+    margin-right: auto;
   }
 }
 

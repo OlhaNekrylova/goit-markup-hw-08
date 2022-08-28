@@ -103,23 +103,65 @@
                  <ul class="picture-list list">
                      <li class="picture-list__item">
                          <div class="picture-list__box">
-                             <img src="./images/box-1.jpg" alt="backend" width="370" height="294">
+                             <picture>
+                                 <source
+                                     srcset="
+                                         ./images/box-1.jpg 1x,
+                                         ./images/box-1-2x.jpg 2x 
+                                     "
+                                     media="(min-width: 1200px)"
+                                 />
+                                 <img
+                                     src="./images/box-1.jpg" 
+                                     alt="backend" 
+                                     width="370" 
+                                     height="294" 
+                                 />
+                             </picture>
                              <div class="picture-list__label">
                                  <p class="picture-list__meta">Десктопні додатки</p>
                              </div>
                          </div>
                      </li>
                      <li class="picture-list__item">
-                         <div class="picture-list__box">            
-                             <img src="./images/box-2.jpg" alt="frontend" width="370" height="294">
+                         <div class="picture-list__box">  
+                             <picture>
+                                 <source
+                                     srcset="
+                                         ./images/box-2.jpg 1x,
+                                         ./images/box-2-2x.jpg 2x 
+                                     "
+                                     media="(min-width: 1200px)"
+                                 />
+                                 <img 
+                                     src="./images/box-2.jpg" 
+                                     alt="frontend" 
+                                     width="370" 
+                                     height="294" 
+                                 />
+                             </picture>       
                              <div class="picture-list__label">
                                  <p class="picture-list__meta">Мобільні додатки</p>
                              </div>
                          </div>
                      </li>
                      <li class="picture-list__item">
-                         <div class="picture-list__box">                                
-                             <img src="./images/box-3.jpg" alt="design" width="370" height="294">
+                         <div class="picture-list__box">   
+                             <picture>
+                                 <source
+                                     srcset="
+                                         ./images/box-3.jpg 1x,
+                                         ./images/box-3-2x.jpg 2x 
+                                     "
+                                     media="(min-width: 1200px)"
+                                 />
+                                 <img 
+                                     src="./images/box-3.jpg" 
+                                     alt="design" 
+                                     width="370" 
+                                     height="294" 
+                                 />
+                             </picture>                             
                              <div class="picture-list__label"> 
                                  <p class="picture-list__meta">Дизайнерські рішення</p>
                              </div>
@@ -132,7 +174,34 @@
              <div class="container">
                  <h2 class="section__title">Наша команда</h2>
                  <ul class="card-list list">
-                     <li class="card-list__item"><img src="./images/img-1.jpg" alt="team-1" width="270" height="260">
+                     <li class="card-list__item">
+                         <picture>
+                             <source
+                                 srcset="
+                                     ./images/img-1.jpg 1x,
+                                     ./images/img-1-2x.jpg 2x 
+                                 "
+                                 media="(min-width: 1200px)"
+                             />
+                             <source
+                                 srcset="
+                                     ./images/img-1-tab.jpg 1x,
+                                     ./images/img-1-tab-2x.jpg 2x 
+                                 "
+                                 media="(min-width: 768px)"
+                             />
+                             <source
+                                 srcset="
+                                     ./images/img-1-mob.jpg 1x,
+                                     ./images/img-1-mob-2x.jpg 2x 
+                                 "
+                                 media="(max-width: 767px)"
+                             />
+                             <img 
+                                 src="./images/img-1-mob.jpg" 
+                                 alt="team-1" 
+                             />
+                         </picture>         
                          <div class="card-list__content">
                              <h3 class="card-list__title">Ігор Дем'яненко</h3>
                              <p class="card-list__text">Product Designer</p>                         
@@ -172,7 +241,34 @@
                              </ul>
                          </div>
                      </li>
-                     <li class="card-list__item"><img src="./images/img-2.jpg" alt="team-2" width="270" height="260">
+                     <li class="card-list__item">
+                         <picture>
+                             <source
+                                 srcset="
+                                     ./images/img-2.jpg 1x,
+                                     ./images/img-2-2x.jpg 2x 
+                                 "
+                                 media="(min-width: 1200px)"
+                             />
+                             <source
+                                 srcset="
+                                     ./images/img-2-tab.jpg 1x,
+                                     ./images/img-2-tab-2x.jpg 2x 
+                                 "
+                                 media="(min-width: 768px)"
+                             />
+                             <source
+                                 srcset="
+                                     ./images/img-2-mob.jpg 1x,
+                                     ./images/img-2-mob-2x.jpg 2x 
+                                 "
+                                 media="(max-width: 767px)"
+                             />
+                             <img 
+                                 src="./images/img-2-mob.jpg" 
+                                 alt="team-2" 
+                             />
+                         </picture> 
                          <div class="card-list__content">
                              <h3 class="card-list__title">Ольга Рєпіна</h3>
                              <p class="card-list__text">Frontend Developer</p>
@@ -212,7 +308,33 @@
                              </ul>
                          </div>
                       </li>
-                      <li class="card-list__item"><img src="./images/img-3.jpg" alt="team-3" width="270" height="260">
+                      <li class="card-list__item">
+                         <picture>
+                             <source
+                                 srcset="
+                                     ./images/img-3.jpg 1x,
+                                     ./images/img-3-2x.jpg 2x 
+                                 "
+                                 media="(min-width: 1200px)"
+                             />
+                             <source
+                                 srcset="
+                                     ./images/img-3-tab.jpg 1x,
+                                     ./images/img-3-tab-2x.jpg 2x 
+                                 "
+                                 media="(min-width: 768px)"
+                             />
+                             <source
+                                 srcset="
+                                     ./images/img-3-mob.jpg 1x,
+                                     ./images/img-3-mob-2x.jpg 2x 
+                                 "
+                                 media="(max-width: 767px)"
+                             />
+                             <img src="./images/img-3-mob.jpg" 
+                                 alt="team-3" 
+                             />
+                         </picture> 
                          <div class="card-list__content">
                              <h3 class="card-list__title">Микола Тарасов</h3>
                              <p class="card-list__text">Marketing</p>
@@ -252,7 +374,33 @@
                              </ul>
                          </div>
                      </li>
-                     <li class="card-list__item"><img src="./images/img-4.jpg" alt="team-4" width="270" height="260">
+                     <li class="card-list__item">
+                         <picture>
+                             <source
+                                 srcset="
+                                     ./images/img-4.jpg 1x,
+                                     ./images/img-4-2x.jpg 2x 
+                                 "
+                                 media="(min-width: 1200px)"
+                             />
+                             <source
+                                 srcset="
+                                     ./images/img-4-tab.jpg 1x,
+                                     ./images/img-4-tab-2x.jpg 2x 
+                                 "
+                                 media="(min-width: 768px)"
+                             />
+                             <source
+                                 srcset="
+                                     ./images/img-4-mob.jpg 1x,
+                                     ./images/img-4-mob-2x.jpg 2x 
+                                 "
+                                 media="(max-width: 767px)"
+                             />
+                             <img src="./images/img-4-mob.jpg" 
+                                 alt="team-4" 
+                             />
+                         </picture> 
                          <div class="card-list__content">
                              <h3 class="card-list__title">Михайло Єрмаков</h3>
                              <p class="card-list__text">UI Designer</p>

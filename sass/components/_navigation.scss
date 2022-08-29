@@ -1,5 +1,9 @@
 .header__navigation {
     margin-left: 93px;
+    display: none;
+    @include tablet {
+        display: block;
+    }
 }
 
 .navigation__list {

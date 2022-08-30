@@ -5,6 +5,13 @@
     }
 }
 
+.header__section {
+    display: none;
+    @include desktop {
+        display: block;
+    }
+}
+
 .section--no-padding-top {
     padding-top: 0;
 }

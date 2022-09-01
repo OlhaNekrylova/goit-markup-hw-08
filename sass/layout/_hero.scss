@@ -1,9 +1,8 @@
-.hero__container {
+.hero {
     padding-top: 118px;
     padding-bottom: 118px; 
     padding-right: 0;
     padding-left: 0;
-    margin: 0 auto;
     background-color: var(--background-color);
     background-repeat: no-repeat;
     background-position: center;
@@ -16,6 +15,7 @@
             ), 
             url(../images/hero-bg-mob-2x.jpg);
         }
+        
     @include tablet {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)
         ), 
@@ -26,6 +26,7 @@
             url(../images/hero-bg-tab-2x.jpg);
         }
     }
+
     @include desktop {
         padding-top: 200px;
         padding-bottom: 200px;
@@ -38,6 +39,10 @@
             url(../images/hero-bg-2x.jpg);
         }
     }
+}
+
+.hero__container {
+    margin: 0 auto;
 }
 
 .hero__title {

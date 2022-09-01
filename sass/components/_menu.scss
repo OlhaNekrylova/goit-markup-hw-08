@@ -1,12 +1,12 @@
 .menu__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 15px 8px;
     margin-bottom: 40px;
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-        width: 326px;
+    @media screen and (max-width:767px) {
+        max-width: 326px;
     }
-    
+        
     @include tablet {
         justify-content: center;
         margin-bottom: 30px;

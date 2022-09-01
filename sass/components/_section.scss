@@ -22,7 +22,7 @@
 
 .section__title {
     margin-right: auto;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-left: auto;
     font-weight: 700;
     font-size: 28px;
@@ -31,6 +31,7 @@
     letter-spacing: 0.03em;
     color: var(--first-text-color);
     @include desktop {
+        margin-bottom: 50px;
         font-size: 36px;
         line-height: 1.16;
     }

@@ -1,25 +1,25 @@
-.footer__container {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--background-color);
-    @media screen and (min-width: 481px) and (max-width: 1199px) {
-        display: flex;
-        flex-wrap: wrap;
+   
+}
+
+.footer__container {
+    @include tablet {
+        display: flex; 
+        align-items: baseline;
     }
 
-    @include desktop {
-        display: flex;
-        align-items: baseline;
+    @media screen and (min-width: 481px) and (max-width: 1199px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 
 .footer__contacts {
     @media screen and (max-width: 767px) {
         margin-bottom: 60px;
-    }
-
-    @media screen and (min-width: 481px) and (max-width: 1199px) {
-        width: calc(100% / 2);
     }
     
     @include desktop {
@@ -91,10 +91,6 @@
 .footer__social {
     @media screen and (max-width: 767px) {
         margin-bottom: 60px;
-    }
-
-    @media screen and (min-width: 481px) and (max-width: 1199px) {
-        width: calc(100% / 2);
     }
 
     @include desktop {
